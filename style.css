@@ -1,0 +1,127 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background: linear-gradient(#18f08b 50%, #16191e 50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 3em;
+}
+
+.head{
+    width: 90vw;
+    max-width: 37.5em;
+    background-color: #242831;
+    padding: 1.6em 0.8em;
+    text-align: center;
+    color: #fff;
+    border-radius: 0.5em;
+    font-size: 1.8em;
+}
+
+.container{
+    width: 90vw;
+    max-width: 37.5em;
+    background-color: #242831;
+    padding: 6em 3em;
+    border-radius: 0.3em;
+}
+
+.inp-wrapper{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.2em;
+}
+
+label{
+    color: #d5d5d5;
+    display: block;
+    font-weight: 600;
+}
+
+input[type="date"]{
+    font-size: 16px;
+    padding: 1em;
+    color: #242831;
+    border: none;
+    outline: none;
+    border-radius: 0.2em;
+    margin-top: 0.6em;
+}
+
+::-webkit-calendar-picker-indicator{
+    background-color: #18f08b;
+    padding: 0.2em;
+    cursor: pointer;
+    border-radius: 0.1em;
+}
+
+button{
+    display: flex;
+    background-color: #18f08b;
+    color: #16191e;
+    font-size: 18px;
+    margin: 2em auto;
+    border: none;
+    padding: 0.7em 2em;
+    border-radius: 0.3em;
+    font-weight: 600;
+
+    transform: scale(1);
+    transition: 0.2s ease;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.output{
+    background-color: rgba(255,255,255,0.15);
+    text-align: center;
+    padding: 1em;
+    color: #fff;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+}
+
+.output span{
+    color: #18f08b;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.me{
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    color: #999;
+    font-size: 17px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 550px) {
+
+    .container{
+        padding: 4em 2em;
+    }
+
+    .inp-wrapper{
+        flex-direction: column;
+    }
+
+    .date-wrapper{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+}
